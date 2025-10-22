@@ -1,0 +1,144 @@
+.status {
+    color: #e6e6e6;
+    width: 50%;
+    margin: 0 auto;
+    padding: 50px;
+    align-items: center;
+}
+
+.post {
+    width: 80%;
+    background-color: #1a1a1a;
+    margin: 0px auto 0px auto;
+    padding: 30px 10px 10px 10px;
+}
+
+.post a {
+    color: hsl(0, 0%, 90%);
+    text-decoration: none;
+}
+
+.post a:hover {
+    color: #a82e00;
+    font-weight: 700;
+}
+
+.post a:active {
+    color: #541700;
+    font-weight: 700;
+}
+
+.post h1 {
+    color: hsl(0, 0%, 90%);
+    margin: 0px;
+    padding: 0px;
+}
+
+.post p {
+    color: hsl(0, 0%, 90%);
+    padding: 0px;
+    margin: 0px;
+}
+
+.post .media {
+    display: block;
+    margin: 0px auto 0px auto;
+    min-width: 40%;
+    max-width: 100%;
+    min-height: 40%;
+    max-height: 700px;
+}
+
+.post .disclaimer {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.post .counter {
+    display: flex;
+    align-items: baseline;
+    margin: 0px;
+    padding: 0px;
+}
+
+.counter h2 {
+    color: hsl(0, 0%, 90%);
+    margin-bottom: 0px;
+    margin-right: 20px;
+    padding: 0px;
+}
+
+.upvote {
+    margin-top: 20px;
+    margin-right: 10px;;
+    max-height: 35px;
+}
+
+.commentCounter {
+    display: flex;
+    align-items: baseline;
+    margin: 0px;
+    padding: 0px;
+}
+
+.commentCounter p {
+    color: hsl(0, 0%, 90%);
+    margin-bottom: 0px;
+    margin-right: 25px;
+    padding: 0px;
+}
+
+.commentUpvote {
+    margin-top: 10px;
+    margin-right: 5px;;
+    max-height: 20px;
+}
+
+ul {
+    color: hsl(0, 0%, 90%);
+    padding: 10px 0px 0px 0px;
+    margin: 5px 0px 5px 0px;
+    list-style: none;
+}
+
+li {
+    padding: 15px 0px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+@media only screen and (max-width: 1000px) {
+    .post h1 {
+        font-size: 133%;
+    }
+
+    .post .media {
+        min-height: 250px;
+        max-height: 500px;
+    }
+
+    .post p {
+        font-size: 75%;
+    }
+
+    .post .upvote {
+        height: 25px;
+    }
+
+    .post .counter h2 {
+        font-size: 100%;
+    }
+
+    .post ul {
+        font-size: 80%;
+    }
+
+    .commentCounter p {
+        font-size: 125%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .post {
+        width: 80%;
+    }
+}

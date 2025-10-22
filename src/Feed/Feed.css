@@ -1,0 +1,207 @@
+.status {
+    width: 50%;
+    margin: 0 auto;
+    padding: 50px;
+    align-items: center;
+}
+
+.subreddits {
+    position: fixed;
+    width: 17.5%;
+    height: 725px;
+    background-color: hsl(0, 0%, 20%);
+    margin: 50px auto auto 2.5%;
+    padding: 20px 10px 20px 0px;
+    border-radius: 10px;
+    text-align: center;
+    overflow-y: scroll;
+    /*Makes box scrollable*/
+    direction: rtl;
+    /*rtl = right to left*/
+}
+
+/*This determines the dimensions of the the whole scrollbar*/
+.subreddits::-webkit-scrollbar {
+    width: 10px;
+}
+
+/*This determines the properties of the the scrollbar indicator*/
+.subreddits::-webkit-scrollbar-thumb {
+    background-color: hsl(0, 0%, 40%);
+    border-radius: 10px;
+}
+
+/*This determines the properties of the scrollbar box*/
+.subreddits::-webkit-scrollbar-track {
+    background-color: transparent;
+    margin: 15px 0px;
+    border-radius: 10px;
+}
+
+.subreddits h2 {
+    color: hsl(0, 0%, 80%);
+    margin: 0px;
+    direction: ltr;
+    /*ltr = left to right. To compensate the alignment of scrollbar*/
+}
+
+.subreddits ul {
+    list-style: none;
+    margin: 0;
+    padding: 20px 0px 0px 0px;
+    direction: ltr;
+    /*ltr = left to right. To compensate the alignment of scrollbar*/
+}
+
+.subreddits li {
+    margin: 0;
+    padding: 2.5px 0;
+    border: none;
+}
+
+.subreddits a {
+    margin: 0px;
+    padding: 0px;
+    color: hsl(0, 0%, 80%);
+    text-decoration: none;
+}
+
+.subreddits a:hover {
+    color: #a82e00;
+    font-weight: 700;
+}
+
+.subreddits a:active {
+    color: #541700;
+    font-weight: 700;
+}
+
+.feed {
+    width: 50%;
+    background-color: hsl(0, 0%, 10%);
+    margin: 0px auto 0px auto;
+    padding: 20px 10px 0px 10px;
+}
+
+.feed .container {
+    width: 100%;
+    background-color: hsl(0, 0%, 10%);
+    margin: 0 auto;
+    padding: 20px 0px 20px 0px;
+    border-bottom: 1px solid hsl(0, 0%, 90%);
+}
+
+.feed a {
+    color: hsl(0, 0%, 90%);
+    text-decoration: none;
+}
+
+.feed h2 {
+    color: hsl(0, 0%, 90%);
+    margin: 0px;
+}
+
+.feed a:hover {
+    color: #a82e00;
+    font-weight: 700;
+}
+
+.feed a:active {
+    color: #541700;
+    font-weight: 700;
+}
+
+.feed p {
+    color: hsl(0, 0%, 90%);
+    margin: 0px;
+}
+
+.feed .media {
+    display: block;
+    margin: 20px auto 0px auto;
+    min-width: 40%;
+    max-width: 100%;
+    min-height: 40%;
+    max-height: 700px;
+    border-radius: 10px;
+}
+
+.feed .disclaimer {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.feed .buttons {
+    display: flex;
+    align-items: baseline;
+    margin: 0px;
+    padding: 0px;
+}
+
+.feed .buttons h3 {
+    color: hsl(0, 0%, 90%);
+    margin-bottom: 0px;
+    margin-right: 20px;
+    padding: 0px;
+}
+
+.feed .upvote {
+    margin-top: 20px;
+    margin-right: 10px;
+    height: 35px;
+}
+
+.feed .comment {
+    margin-top: 20px;
+    margin-right: 10px;
+    height: 25px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .subreddits::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    .subreddits h2 {
+        font-size: 125%;
+    }
+
+    .subreddits a {
+        font-size: 75%;
+    }
+
+    .feed h2 {
+        font-size: 125%;
+    }
+
+    .feed .media {
+        min-height: 250px;
+        max-height: 500px;
+    }
+
+    .feed p {
+        font-size: 75%;
+    }
+
+    .feed .upvote {
+        height: 25px;
+    }
+
+    .buttons h3 {
+        font-size: 100%;
+    }
+
+    .feed .comment {
+        height: 20px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .feed {
+        width: 75%;
+    }
+
+    .subreddits {
+        display: none;
+    }
+}
